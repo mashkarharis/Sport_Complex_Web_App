@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+    
+    
+    set new event
+    
+    
+</html>
+
+
+    <section id="facility" class="parallax-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-offset-2 col-md-8 col-sm-12">
+                    <!-- SECTION TITLE -->
+                    <div class="section-title">
+                            <h1>Our Sports</h1>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div id="owl-facility" class="owl-carousel">
+                    <?php
+                    $list = SportController::get_openclose_times();
+                    foreach($list as $val){
+                        $open = $val->get_opentime();
+                        $close = $val->get_closetime();
+                        $name = $val->get_name();
+                        echo ('<div class="col-md-4 col-sm-6 item">');
+                            echo ('<div class="facility-item">');
+                            echo ('</div>');
+                            echo ('<p>AAAAAAAAAAAAAAAAAA</p>');
+                            echo($name);
+                            echo('</p>');
+                            echo ('<h3>');
+                        echo ('</div>');
+                    }
+                    ?>
+                </div>
+
+            </div>
+        </div>
+</section>
+
