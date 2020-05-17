@@ -51,6 +51,44 @@ class Member{
         
     }
 
+    public function getMemberData($usernameval){
+        $DBData = new DBaseData();
+        try {
+            $array=$DBData->get_data();
+            $servername = $array[0];
+            $user = $array[1];
+            $pass = $array[2];
+            $dbname = $array[3];
+
+            error_reporting(0);
+            $connect= mysqli_connect($servername,$user,$pass);
+            if(!$connect){throw new Exception("Can't Connect Right Now");}     
+            $dbexist=mysqli_select_db($connect,$dbname);
+            if(!$dbexist){throw new Exception("No DataBase Found");} 
+            $sql ="select * from members where user_name='$usernameval'";
+            $result=mysqli_query($connect, $sql);
+            if(!$result){throw new Exception("Error Occured While Using Data");}
+            $closed=mysqli_close($connect);
+            if(!$closed){throw new Exception("Error Occured While Closing Database");}
+
+            
+            if (mysqli_num_rows($result)> 0) {
+
+                $row = mysqli_fetch_assoc($result);
+                $arr=array($row['nicnumber'],$row['first_name'],$row['last_name'],$row['user_name'],$row['profile_pic'],$row['email'],$row['mobile_no'],$row['password'],$row['previlege'],$row['status']);
+                return $arr;
+
+            }else{
+                return array("11","","","","","","","","","");
+            }
+            
+        } catch (Exception $ex){
+            return array("22","","","","","","","","","");
+        }
+        
+
+    }
+
     public function setvalues($nic,$fname,$lname,$uname,$emailaddress,$mobileno,$pass,$profilepic,$privileges,$stat){
         $this->nicnumber=$nic;
         $this->first_name=$fname;

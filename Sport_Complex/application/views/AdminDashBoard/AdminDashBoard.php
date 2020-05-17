@@ -1,4 +1,7 @@
 <?php
+    session_start();
+    $_SESSION['name']=$_SESSION['uname'];
+    
 ?>
 <!DOCTYPE html>
 <html  >
@@ -50,13 +53,21 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="AdminDashBoard.html#counters2-3"><span class="mbri-watch mbr-iconfont mbr-iconfont-btn"></span>My Basic Info &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#counters2-3"><span class="mbri-devices mbr-iconfont mbr-iconfont-btn"></span>View/Edit Full Profile &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-r"><span class="mbri-paper-plane mbr-iconfont mbr-iconfont-btn"></span>Member Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-t"><span class="mbri-flag mbr-iconfont mbr-iconfont-btn"></span>Sport Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-v"><span class="mbri-file mbr-iconfont mbr-iconfont-btn"></span>Booking Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-11"><span class="mbri-rocket mbr-iconfont mbr-iconfont-btn"></span>Equipment Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a>   
+                    <a class="nav-link link text-white display-4" href="AdminDashBoard.html#counters2-3">
+                        <span class="mbri-watch mbr-iconfont mbr-iconfont-btn">
+
+                        </span>My Basic Info &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> 
+                        <a class="nav-link link text-white display-4" href="viewmydetails.php">
+                        <span class="mbri-devices mbr-iconfont mbr-iconfont-btn">
+
+                        </span>View/Edit Full Profile &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a>
+                         <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-r"><span class="mbri-paper-plane mbr-iconfont mbr-iconfont-btn"></span>Member Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-t"><span class="mbri-flag mbr-iconfont mbr-iconfont-btn"></span>Sport Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-v"><span class="mbri-file mbr-iconfont mbr-iconfont-btn"></span>Booking Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-11"><span class="mbri-rocket mbr-iconfont mbr-iconfont-btn"></span>Equipment Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a>   
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="https://mobirise.com">
                         </a>
                 </li></ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="https://mobirise.com"><span class="mbri-logout mbr-iconfont mbr-iconfont-btn"></span>
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="logout.php"><span class="mbri-logout mbr-iconfont mbr-iconfont-btn"></span>
                     
                     Log Out</a></div>
         </div>
@@ -91,7 +102,7 @@
                                 <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
                                     Privilege</h4>
                                 <p class="mbr-content-text mbr-fonts-style display-7">
-                                    Admin</p>
+                                    <?php echo $_SESSION['privilege']?></p>
                             </div>
                         </div>
                     </div>
@@ -105,7 +116,7 @@
                                 <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
                                     NIC NO.</h4>
                                 <p class="mbr-content-text mbr-fonts-style display-7">
-                                    0001V</p>
+                                <?php echo $_SESSION['nic']?></p>
                             </div>
                         </div>
                     </div>
@@ -119,7 +130,7 @@
                                 <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
                                     User Name</h4>
                                 <p class="mbr-content-text mbr-fonts-style display-7">
-                                        Silva SSK</p>
+                                <?php echo $_SESSION['uname']?></p>
                             </div>
                         </div>
                     </div>
@@ -132,7 +143,7 @@
                             <div class="card-texts">
                                 <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
                                     Email</h4>
-                                <p class="mbr-content-text mbr-fonts-style display-7">abc123@gmail.com</p>
+                                <p class="mbr-content-text mbr-fonts-style display-7"><?php echo $_SESSION['email']?></p>
                             </div>
                         </div>
                     </div>
