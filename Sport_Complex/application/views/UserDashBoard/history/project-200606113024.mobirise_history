@@ -44,15 +44,7 @@
     "versionPublish": "4.12.3",
     "screenshot": "screenshot.png",
     "publishType": "local",
-    "publishPath": "file:///C:/Users/HP-PAVILLION/Desktop/mobirise/UserDashBoard",
-    "imageResize": true,
-    "favicon": false,
-    "robotsSwitcher": false,
-    "sitemapSwitcher": false,
-    "sitemapSwitcherAuto": false,
-    "siteUrl": false,
-    "cookiesAlert": false,
-    "gdpr": false
+    "publishPath": "file:///C:/Users/HP-PAVILLION/Desktop/mobirise/UserDashBoard"
   },
   "pages": {
     "UserDashBoard.html": {

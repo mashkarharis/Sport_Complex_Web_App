@@ -1,40 +1,34 @@
 <?php
-require_once __DIR__."/../DB/DataBase.php";
+require_once __DIR__."/../DB/DAO.php";
+require_once __DIR__."/Model.php";
+class Member extends Model{
 
-class Member{
-
-    private $user_name;
-    private $password;
-    private $nicnumber;
-    private $first_name;
-    private $last_name;
-    private $profile_pic;
-    private $email;
-    private $mobile_no;
-    private $privilege;
-    private $status;
-
+    private function __construct() {
+        parent::__construct();
+    }
+    
+    private static $_instances = array();
+    
+    private function  __clone() { }
+    
+    public static function getInstance($uname){
+        
+        $_instance = Member::$_instances[$uname];
+        
+        if(is_null($_instance) ){
+           $_instance = new Member();
+           Member::$_instances[$uname]=$_instance;
+        }
+        return $_instance;
+    }
+    
+    
     public function getMemberValidation($uname,$pwd){
-            $DBData = new DBaseData();
-        try {
-            $array=$DBData->get_data();
-            $servername = $array[0];
-            $user = $array[1];
-            $pass = $array[2];
-            $dbname = $array[3];
-
-            error_reporting(0);
-            $connect= mysqli_connect($servername,$user,$pass);
-            if(!$connect){throw new Exception("Can't Connect Right Now");}     
-            $dbexist=mysqli_select_db($connect,$dbname);
-            if(!$dbexist){throw new Exception("No DataBase Found");} 
+       try {
             $sql ="select * from members where user_name='$uname' and password='$pwd'";
-            $result=mysqli_query($connect, $sql);
-            if(!$result){throw new Exception("Error Occured While Using Data");}
-            $closed=mysqli_close($connect);
-            if(!$closed){throw new Exception("Error Occured While Closing Database");}
-
-            
+            $message=("Error Occured While Using Data");
+            $result=$this->dao->execute($sql,$message);
+                        
             if (mysqli_num_rows($result)> 0) {
 
                 $row = mysqli_fetch_assoc($result);
@@ -52,25 +46,10 @@ class Member{
     }
 
     public function getMemberData($usernameval){
-        $DBData = new DBaseData();
         try {
-            $array=$DBData->get_data();
-            $servername = $array[0];
-            $user = $array[1];
-            $pass = $array[2];
-            $dbname = $array[3];
-
-            error_reporting(0);
-            $connect= mysqli_connect($servername,$user,$pass);
-            if(!$connect){throw new Exception("Can't Connect Right Now");}     
-            $dbexist=mysqli_select_db($connect,$dbname);
-            if(!$dbexist){throw new Exception("No DataBase Found");} 
             $sql ="select * from members where user_name='$usernameval'";
-            $result=mysqli_query($connect, $sql);
-            if(!$result){throw new Exception("Error Occured While Using Data");}
-            $closed=mysqli_close($connect);
-            if(!$closed){throw new Exception("Error Occured While Closing Database");}
-
+            $message=("Error Occured While Using Data");
+            $result=$this->dao->execute($sql,$message);
             
             if (mysqli_num_rows($result)> 0) {
 
@@ -89,48 +68,18 @@ class Member{
 
     }
 
-    public function setvalues($nic,$fname,$lname,$uname,$emailaddress,$mobileno,$pass,$profilepic,$privileges,$stat){
-        $this->nicnumber=$nic;
-        $this->first_name=$fname;
-        $this->last_name=$lname;
-        $this->user_name=$uname;
-        $this->email=$emailaddress;
-        $this->mobile_no=$mobileno;
-        $this->password=$pass;
-        $this->profile_pic=$profilepic;
-        $this->privilege=$privileges;
-        $this->status=$stat;
-    }
 
     public function signupmember($nic,$fname,$lname,$uname,$emailaddress,$mobileno,$pwd){
-        $DBData = new DBaseData();
-        try {
-            $array=$DBData->get_data();
-            $servername = $array[0];
-            $user = $array[1];
-            $pass = $array[2];
-            $dbname = $array[3];
-
-            error_reporting(0);
-            $connect= mysqli_connect($servername,$user,$pass);
-            if(!$connect){throw new Exception("Can't Connect Right Now");}     
-            $dbexist=mysqli_select_db($connect,$dbname);
-            if(!$dbexist){throw new Exception("No DataBase Found");} 
+       try {
             $sql ="insert into members (nicnumber,first_name,last_name,user_name,profile_pic,email,mobile_no,password,previlege,status) 
             values ('$nic','$fname','$lname','$uname','null','$emailaddress','$mobileno','$pwd','user','Pending')";
-            $result=mysqli_query($connect, $sql);
-            if(!$result){throw new Exception("We think NIC or Username Has Already in use... Try Changing NIC Or Username");}
-            $closed=mysqli_close($connect);
-            if(!$closed){throw new Exception("Error Occured While Closing Database");}
-
+            $message="We think NIC or Username Has Already in use... Try Changing NIC Or Username";
+            $this->dao->execute($sql,$message);
             return "Success";
 
         } catch (Exception $ex){
             return $ex->getMessage();
         }
-        
-
-
     }
     
 }
