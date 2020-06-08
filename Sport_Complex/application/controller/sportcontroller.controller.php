@@ -1,6 +1,7 @@
 <?php
+require_once __DIR__."/../controller/controller.php";
 require_once __DIR__."/../model/Sport.model.php";
-class SportController{
+class SportController extends controller{
     private $sportmodel;
     public function __construct(){
         $this->sportmodel = new Sport("","","","","","");

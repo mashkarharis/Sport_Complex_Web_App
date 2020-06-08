@@ -341,7 +341,7 @@
 
             <div class="card p-3 col-12 col-md-6">
                 <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-print"></span>
+                <a href='viewfullmemberdetails.php'><span class="mbr-iconfont mbri-print"></span></a>
                 </div>
                 <div class="card-box">
                     <h4 class="card-title py-3 mbr-fonts-style display-5">

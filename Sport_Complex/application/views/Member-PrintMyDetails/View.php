@@ -20,11 +20,27 @@
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
+  <script src="html2canvas.js"></script>
+  <script>
+
+	function makeScreenshot(){
+		html2canvas(document.body,{
+			dpi: 192,
+			onrendered: function(canvas){
+				console.log(canvas.toDataURL("image/png"));
+				$('#blank').attr('href',canvas.toDataURL("image/png"));
+				$('#blank').attr('download','Screenshot.png');
+				$('#blank')[0].click();
+			}
+
+		});
+	}
+
+  </script>
   
 </head>
 <body>
+<div id="screenshot">
   <section class="menu cid-s16OMeKKiW" once="menu" id="menu2-1">
 
     
@@ -104,7 +120,7 @@
         <div class="row justify-content-center">
             <div class="media-container-column col-lg-8" data-form-type="formoid">
                 <!---Formbuilder Form--->
-                <form action="update.php" method="POST" class="mbr-form form-with-styler">
+                <form action="print.php" method="POST" class="mbr-form form-with-styler">
                     <div class="row">
                         
                         <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
@@ -125,37 +141,37 @@
                     <div class="dragArea row">
                         <div class="col  form-group" data-for="name">
                             <label for="name-form1-5" class="form-control-label mbr-fonts-style display-7">First Name</label>
-                            <input type="text" name="fname" data-form-field="Name" required="required" class="form-control display-7" value="<?php echo $_SESSION['231fname'] ?>" id="fname">
+                            <input type="text" name="fname" data-form-field="Name" required="required" class="form-control display-7" value="<?php echo $_SESSION['231fname'] ?>" id="fname"readonly>
                         </div>
                     </div>
                     <div class="dragArea row">
                         <div class="col  form-group" data-for="name">
                             <label for="name-form1-5" class="form-control-label mbr-fonts-style display-7">Last Name</label>
-                            <input type="text" name="lname" data-form-field="Name" required="required" class="form-control display-7" value="<?php echo $_SESSION['231lname'] ?>" id="lname">
+                            <input type="text" name="lname" data-form-field="Name" required="required" class="form-control display-7" value="<?php echo $_SESSION['231lname'] ?>" id="lname"readonly>
                         </div>
                     </div>
                     <div class="dragArea row">
                         <div class="col  form-group" data-for="name">
                             <label for="name-form1-5" class="form-control-label mbr-fonts-style display-7">Email</label>
-                            <input type="text" name="email" data-form-field="Name" required="required" class="form-control display-7" value="<?php echo $_SESSION['231email'] ?>" id="email">
+                            <input type="text" name="email" data-form-field="Name" required="required" class="form-control display-7" value="<?php echo $_SESSION['231email'] ?>" id="email"readonly>
                         </div>
                     </div>
                     <div class="dragArea row">
                         <div class="col  form-group" data-for="name">
                             <label for="name-form1-5" class="form-control-label mbr-fonts-style display-7">Mobile No</label>
-                            <input type="text" name="mobile" data-form-field="Name" required="required" class="form-control display-7" value="<?php echo $_SESSION['231mobile'] ?>" id="mobile">
+                            <input type="text" name="mobile" data-form-field="Name" required="required" class="form-control display-7" value="<?php echo $_SESSION['231mobile'] ?>" id="mobile"readonly>
                         </div>
                     </div>
                     <div class="dragArea row">
                         <div class="col  form-group" data-for="name">
                             <label for="name-form1-5" class="form-control-label mbr-fonts-style display-7">Password</label>
-                            <input type="password" name="password" placeholder = "password" data-form-field="Name" required="required" class="form-control display-7"  value="<?php echo $_SESSION['231password'] ?>" id="password">
+                            <input type="password" name="password" placeholder = "password" data-form-field="Name" required="required" class="form-control display-7"  value="<?php echo $_SESSION['231password'] ?>" id="password"readonly>
                         </div>
                     </div>
                     <div class="dragArea row">
                         <div class="col  form-group" data-for="name">
                             <label for="name-form1-5" class="form-control-label mbr-fonts-style display-7">Confirm Password</label>
-                            <input type="password" name="conpassword" placeholder= "conpassword" data-form-field="Name" required="required" class="form-control display-7" value="<?php echo $_SESSION['231password'] ?>" id="conpassword">
+                            <input type="password" name="conpassword" placeholder= "conpassword" data-form-field="Name" required="required" class="form-control display-7" value="<?php echo $_SESSION['231password'] ?>" id="conpassword"readonly>
                         </div>
                     </div>
                     <div class="dragArea row">
@@ -170,7 +186,8 @@
                             <input type="text" name="status" data-form-field="Name" required="required" class="form-control display-7" value="<?php echo $_SESSION['231status'] ?>" id="status" readonly>
                         </div>
                     </div>
-                    <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-form btn-success display-4">UPDATE</button></div>
+                    <div class="col-md-12 input-group-btn align-center"><button type="button" name="button" onclick=javascript:makeScreenshot(); id="button" class="btn btn-form btn-success display-4">PRINT</button></div>
+                 	<a href="" id="blank"></a>
                  </form><!---Formbuilder Form--->
             </div>
         </div>
@@ -208,20 +225,7 @@
   <script src="assets/theme/js/script.js"></script>
   
   
+</div>
 </body>
 </html>
-<script>
-var password = document.getElementById("password") , confirm_password = document.getElementById("conpassword");
-
-function validatePassword(){
-  if(password.value != confirm_password.value) {
-    confirm_password.setCustomValidity("Passwords Don't Match");
-  } else {
-    confirm_password.setCustomValidity('');
-  }
-}
-
-password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;
-</script>
 

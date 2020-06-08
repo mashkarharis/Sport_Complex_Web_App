@@ -299,7 +299,7 @@ $_SESSION['name']=$_SESSION['uname'];
 
             <div class="card p-3 col-12 col-md-6">
                 <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-italic"></span>
+                <a href='printmydetails.php'><span class="mbr-iconfont mbri-italic"></span></a>
                 </div>
                 <div class="card-box">
                     <h4 class="card-title py-3 mbr-fonts-style display-5">

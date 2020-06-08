@@ -1,7 +1,8 @@
 <?php
+require_once __DIR__."/../controller/controller.php";
 require_once __DIR__."/../model/Member.model.php";
 require_once __DIR__."/../controller/urlcontroller.controller.php";
-class MemberController{
+class MemberController extends controller {
 
     public function gotodashboard($uname,$password){
         $member=Member::getInstance($uname);
@@ -28,6 +29,26 @@ class MemberController{
         $data = $member->getMemberData($uname);
         $url->loadmydetails($data);
 
+    }
+    public function printmydetails($uname){
+        $member=Member::getInstance($uname);
+        $url = new URLController();
+        $data = $member->getMemberData($uname);
+        $url->loadmydetailsforprint($data);
+        
+    }
+    public function updatemember($nic,$uname,$fname,$lname,$profilepic,$email,$mobile,$password,$privilege,$status){
+        $member=Member::getInstance($uname);
+        $url = new URLController();
+        $status=$member->updatemember($nic,$uname,$fname,$lname,$profilepic,$email,$mobile,$password,$privilege,$status);
+        if($status=="Success"){$url->loadwithmessage("Success","Your Update Success !");}
+        else{$url->loadwithmessage("Failed",$status);}
+        
+    }
+    public function getallmemberdetails(){
+        $member = Member::getInstance("...");
+        return $member->getallmemberdetails();
+        
     }
 
 }

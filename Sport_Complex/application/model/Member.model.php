@@ -13,13 +13,11 @@ class Member extends Model{
     
     public static function getInstance($uname){
         
-        $_instance = Member::$_instances[$uname];
-        
-        if(is_null($_instance) ){
+        if(!array_key_exists($uname,Member::$_instances)){
            $_instance = new Member();
            Member::$_instances[$uname]=$_instance;
         }
-        return $_instance;
+        return Member::$_instances[$uname];
     }
     
     
@@ -79,6 +77,36 @@ class Member extends Model{
 
         } catch (Exception $ex){
             return $ex->getMessage();
+        }
+    }
+    public function updatemember($nic,$uname,$fname,$lname,$profilepic,$email,$mobile,$password,$privilege,$status){
+        try {
+            $sql ="UPDATE members SET user_name = '$uname', first_name = '$fname', last_name = '$lname', email = '$email', mobile_no = '$mobile', password = '$password', previlege = '$privilege', status = '$status' WHERE nicnumber='$nic'";
+            $message="Error Occured While Updating Data !";
+            $this->dao->execute($sql,$message);
+            return "Success";
+            
+        } catch (Exception $ex){
+            return $ex->getMessage();
+        }
+    }
+    public function getallmemberdetails(){
+        try {
+            $sql ="SELECT * FROM members";
+            $message="Members Data Loading Failed";
+            $result=$this->dao->execute($sql,$message);
+            
+            $list =array();
+            
+            while($row = $result->fetch_assoc()) {
+                $objects = array("nic"=>$row['nicnumber'],"uname"=>$row['user_name'],"fname"=>$row['first_name'],"lname"=>$row['last_name'],"email"=>$row['email'],
+                    "mobile"=>$row['mobile_no'],"previlege"=>$row['previlege'],"status"=>$row['status'],"password"=>$row['password']
+                );
+                array_push($list, $objects);
+            }
+            return $list;
+        } catch (Exception $ex){
+            return array();
         }
     }
     
