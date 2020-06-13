@@ -11,12 +11,7 @@
             echo ('<div class="facility-item">');
             echo ('<img src="images/'.$image.'"  class="img-responsive" alt="">');
             echo ('<div class="facility-overlay">');
-                                        
-                echo ('<ul class="book-icon">');
-                    echo ('<a href="">Log In To Book</a>');
-                    echo ('<li><span href="#" class="fa fa-bookmark"></span></li>');
-                                            
-                echo ('</ul>');
+                  
             echo ('</div>');
             echo ('</div>');
             echo ('<p>');

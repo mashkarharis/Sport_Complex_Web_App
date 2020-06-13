@@ -1,4 +1,4 @@
 Singleton - DBDATA ----> OK
 Multiton - member -----> OK
-Factory  - controller
-ObjectPool - Conncetions
+Factory  - Model -----> OK
+ObjectPool - Conncetions ---> OK

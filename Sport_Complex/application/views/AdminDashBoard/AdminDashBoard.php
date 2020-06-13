@@ -290,7 +290,7 @@
 
             <div class="card p-3 col-12 col-md-6 col-lg-4">
                 <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-success"></span>
+                    <a href='approve.php'><span class="mbr-iconfont mbri-success"></span></a>
                 </div>
                 <div class="card-box">
                     <h4 class="card-title py-3 mbr-fonts-style display-5">Approve Membership</h4>
@@ -299,21 +299,21 @@
                 </div>
             </div>
 
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
+            <div class="card p-3 col-12 col-md-6">
                 <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-edit2"></span>
+                <a href='viewfullmemberdetails.php'><span class="mbr-iconfont mbri-print"></span></a>
                 </div>
                 <div class="card-box">
                     <h4 class="card-title py-3 mbr-fonts-style display-5">
-                        Edit Member</h4>
+                        View Full Member Details</h4>
                     <p class="mbr-text mbr-fonts-style display-7">
-                        Edit Details of Members</p>
+                        View All details of member except password</p>
                 </div>
             </div>
 
             <div class="card p-3 col-12 col-md-6 col-lg-4">
                 <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-close"></span>
+                    <a href='removemember.php'><span class="mbr-iconfont mbri-close"></span></a>
                 </div>
                 <div class="card-box">
                     <h4 class="card-title py-3 mbr-fonts-style display-5">
@@ -331,47 +331,6 @@
 
 </section>
 
-<section class="features1 cid-rYzuOfMLoQ" id="features1-o">
-    
-    
-
-    
-    <div class="container">
-        <div class="media-container-row">
-
-            <div class="card p-3 col-12 col-md-6">
-                <div class="card-img pb-3">
-                <a href='viewfullmemberdetails.php'><span class="mbr-iconfont mbri-print"></span></a>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5">
-                        View Full Member Details</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        View All details of member except password</p>
-                </div>
-            </div>
-
-            <div class="card p-3 col-12 col-md-6">
-                <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-clock"></span>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5">
-                        Renew Membership</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        Renew membership</p>
-                </div>
-            </div>
-
-            
-
-            
-
-        </div>
-
-    </div>
-
-</section>
 
 <section class="mbr-section info1 cid-rYzxdAYqgT" id="info1-s">
 

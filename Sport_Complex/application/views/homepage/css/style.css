@@ -51,7 +51,7 @@ h1,h2,h3,h4,h5,h6 {
   
   p {
     color: #757575;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 300;
     line-height: 29px;
     letter-spacing: 0.5px;
@@ -186,7 +186,7 @@ html{
 
   
   .custom-navbar .nav li a {
-    font-size: 14px;
+    font-size: 18px;
   font-weight: normal;
   color: #f9f9f9;
   letter-spacing: 0.5px;
@@ -310,7 +310,7 @@ TRIAL
   }
   
   #trial-form {
-    padding-top: 22px;
+    padding-top: 26px;
     font-weight: bold;
   }
   
@@ -319,7 +319,7 @@ TRIAL
     border: none;
     border-bottom:solid 1.5px #4dc47d;
     box-shadow: none;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     margin-bottom: 22px;
     -webkit-transition: all ease-in-out 0.4s;
@@ -345,8 +345,9 @@ TRIAL
     background: transparent;
     border: 1.5px solid #4dc47d;
     padding: 0;
-    width: 85%;
+    width: 55%;
     max-width: 768px;
+    font-size: 22px;
     font-weight: bold;
   }
   #trial button#frm-submit:hover {
@@ -368,9 +369,13 @@ TRIAL
     margin-bottom: 22px;
   }
   
-  #facility h3,
+  #facility h3{
+  	margin: 0;
+  	font-weight: bold;
+  }
   #facility p {
     margin: 0;
+    
   }
   
   .facility-item {
@@ -386,27 +391,16 @@ TRIAL
     -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
     background-size: cover;
-    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   }
   .facility-item:hover img {
-    transform: scale(1.1);
   }
   
   .facility-overlay {
-    background: rgba(0,0,0,0.5);
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    -webkit-transition: all ease-in-out 0.4s;
-    transition: all ease-in-out 0.4s;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    
   }
 .book-icon{
       font-size: 30px;
