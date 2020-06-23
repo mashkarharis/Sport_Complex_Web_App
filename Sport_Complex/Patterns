@@ -2,3 +2,4 @@ Singleton - DBDATA ----> OK
 Multiton - member -----> OK
 Factory  - Model -----> OK
 ObjectPool - Conncetions ---> OK
+Observer - Notification Manager ---> OK

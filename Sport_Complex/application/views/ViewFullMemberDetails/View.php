@@ -146,8 +146,8 @@ function myFunction() {
     <th >Status</th>
   </tr>
   <?php 
-  require_once __DIR__."/../../controller/membercontroller.controller.php";
-  require_once __DIR__."/../../model/Member.model.php";
+  require_once __DIR__."/../../controller/membercontroller.php";
+  require_once __DIR__."/../../model/Member.php";
   $membercontroller = new MemberController();
   $list = $membercontroller->getallmemberdetails();
   foreach($list as $val){

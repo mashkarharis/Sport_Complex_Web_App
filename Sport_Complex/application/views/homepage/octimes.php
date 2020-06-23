@@ -1,6 +1,6 @@
 <?php
-    require_once __DIR__."/../../controller/sportcontroller.controller.php";
-    require_once __DIR__."/../../model/Sport.model.php";
+    require_once __DIR__."/../../controller/sportcontroller.php";
+    require_once __DIR__."/../../model/Sport.php";
     $sportcontroller = new SportController();    
     $list =$sportcontroller->get_data_for_set_price();
     foreach($list as $val){

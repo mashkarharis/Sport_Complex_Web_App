@@ -54,3 +54,32 @@ insert into members (nicnumber,first_name,last_name,user_name,profile_pic,email,
 select * from members;
 
 
+// Notifications
+
+CREATE TABLE IF NOT EXISTS `notifications` (
+  `notification_id` varchar(40) ,
+  `senderuname` varchar(40),
+  `title` text,
+  `description` text,
+  `type` text,
+  `datetime` datetime ,
+  
+  PRIMARY KEY (`notification_id`),
+  FOREIGN KEY (`senderuname`) REFERENCES members(`user_name`)
+);
+
+select * from notifications;
+
+
+// mailbox
+
+
+CREATE TABLE IF NOT EXISTS `mailbox` (
+  `notification_id` varchar(40),
+  `receiveruname` varchar(40),
+  `status` text,
+  FOREIGN KEY (`notification_id`) REFERENCES notifications(`notification_id`),
+  FOREIGN KEY (`receiveruname`) REFERENCES members(`user_name`)
+);
+
+select * from mailbox;

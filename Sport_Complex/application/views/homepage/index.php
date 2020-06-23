@@ -85,7 +85,7 @@
                             
 
                             <div class="col-md-12 col-sm-12">
-                                <input style="text-align:center; type="datetime-local" class="form-control" value="2020-06-12T19:30" id="frm-time" name="frm-time" placeholder="Select Date">
+                                <input type="datetime-local" class="form-control" value="2020-06-12T19:30" id="frm-time" name="frm-time" placeholder="Select Date">
                             </div>                            
 
                             <div class="clearfix"></div>

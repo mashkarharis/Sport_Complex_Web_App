@@ -1,7 +1,7 @@
 <?php
 
 
-require_once __DIR__."/../../controller/MemberController.controller.php";
+require_once __DIR__."/../../controller/MemberController.php";
 
 $uname =  $_POST['uname']; 
 

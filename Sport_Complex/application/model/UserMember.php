@@ -1,10 +1,8 @@
 <?php
-require_once __DIR__."/Member.model.php";
+require_once __DIR__."/Member.php";
 class UserMember extends Member{
     
-    private function __construct() {
-        $this->dao=DAO::getInstance();
-    }
+    private function __construct() {}
     
     private static $_instances = array();
     
@@ -14,16 +12,24 @@ class UserMember extends Member{
         
         if(!array_key_exists($uname,UserMember::$_instances)){
             $_instance = new UserMember();
+            $_instance->setuname($uname);
             UserMember::$_instances[$uname]=$_instance;
         }
         return UserMember::$_instances[$uname];
     }
-    public function signupmember($nic,$fname,$lname,$uname,$emailaddress,$mobileno,$pwd){
+    public function signupmember(){
         try {
+            $nic=$this->getnic();
+            $uname=$this->getuname();
+            $fname=$this->getfname();
+            $lname=$this->getlname();
+            $emailaddress=$this->getemail();
+            $mobileno=$this->getmobileno();
+            $pwd=$this->getpassword();
             $sql ="insert into members (nicnumber,first_name,last_name,user_name,profile_pic,email,mobile_no,password,previlege,status)
             values ('$nic','$fname','$lname','$uname','null','$emailaddress','$mobileno','$pwd','user','Pending')";
             $message="We think NIC or Username Has Already in use... Try Changing NIC Or Username";
-            $this->dao->execute($sql,$message);
+            parent::getdao()->execute($sql,$message);
             return "Success";
             
         } catch (Exception $ex){

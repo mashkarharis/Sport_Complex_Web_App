@@ -1,5 +1,5 @@
 <?php
-require __DIR__.'/../controller/urlcontroller.controller.php';
+require __DIR__.'/../controller/urlcontroller.php';
 class Application{
     public function start(){
         session_start();

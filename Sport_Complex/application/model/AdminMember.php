@@ -1,10 +1,8 @@
 <?php
-require_once __DIR__."/Member.model.php";
+require_once __DIR__."/Member.php";
 class AdminMember extends Member{
     
-    private function __construct() {
-        $this->dao=DAO::getInstance();
-    }
+    private function __construct() {}
     
     private static $_instances = array();
     
@@ -14,6 +12,7 @@ class AdminMember extends Member{
         
         if(!array_key_exists($uname,AdminMember::$_instances)){
             $_instance = new AdminMember();
+            $_instance->setuname($uname);
             AdminMember::$_instances[$uname]=$_instance;
         }
         return AdminMember::$_instances[$uname];
@@ -22,7 +21,7 @@ class AdminMember extends Member{
         try {
             $sql ="select * from members where status='Pending'";
             $message=("Error While get pendings ...");
-            $result=$this->dao->execute($sql,$message);
+            $result=parent::getdao()->execute($sql,$message);
             $data=array();
             if (mysqli_num_rows($result)> 0) {
                 while($row=mysqli_fetch_array($result)){
@@ -68,7 +67,27 @@ class AdminMember extends Member{
         try {
             $sql ="SELECT * FROM members";
             $message="Members Data Loading Failed";
-            $result=$this->dao->execute($sql,$message);
+            $result=parent::getdao()->execute($sql,$message);
+            
+            $list =array();
+            
+            while($row = $result->fetch_assoc()) {
+                $objects = array("nic"=>$row['nicnumber'],"uname"=>$row['user_name'],"fname"=>$row['first_name'],"lname"=>$row['last_name'],"email"=>$row['email'],
+                    "mobile"=>$row['mobile_no'],"previlege"=>$row['previlege'],"status"=>$row['status'],"password"=>$row['password']
+                );
+                array_push($list, $objects);
+            }
+            return $list;
+        } catch (Exception $ex){
+            return array();
+        }
+    }
+    
+    public function getalladmindata(){
+        try {
+            $sql ="SELECT * FROM members where previlege='admin'";
+            $message="Members Data Loading Failed";
+            $result=parent::getdao()->execute($sql,$message);
             
             $list =array();
             
