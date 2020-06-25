@@ -25,6 +25,24 @@ class Sport{
             return array();
         }
     }
+    public function get_sport_names(){
+        try {
+            $sql ="SELECT name FROM sports";
+            $message="Sport Loading Failed";
+            $result=$this->getdao()->execute($sql,$message);
+            
+            $list =array();
+            
+            while($row = $result->fetch_assoc()) {
+                $objects = $row['name'];
+                array_push($list, $objects);
+            }
+            return $list;
+        } catch (Exception $ex){
+            return array();
+        }
+    }
+    
 }
 
 ?>

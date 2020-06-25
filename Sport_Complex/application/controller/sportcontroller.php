@@ -9,6 +9,9 @@ class SportController{
         return $this->sportmodel->get_data_for_set_price();
 
     }
+    public function get_sport_names(){
+        return $this->sportmodel->get_sport_names();
+    }
 
 
 

@@ -71,7 +71,7 @@ CREATE TABLE IF NOT EXISTS `notifications` (
 select * from notifications;
 
 
-// mailbox
+// mailbox;
 
 
 CREATE TABLE IF NOT EXISTS `mailbox` (
@@ -83,3 +83,32 @@ CREATE TABLE IF NOT EXISTS `mailbox` (
 );
 
 select * from mailbox;
+
+
+// bookings;
+
+
+CREATE TABLE IF NOT EXISTS `bookings` (
+  `booking_id` varchar(40),
+  `uname` varchar(40),
+  `date` DATE,
+  `slot` varchar(40),
+  `sport` varchar(40),
+  FOREIGN KEY (`sport`) REFERENCES sports(`name`),
+  FOREIGN KEY (`uname`) REFERENCES members(`user_name`)
+);
+insert into bookings (booking_id,uname,date,slot,sport) values ("0001","Vimal432","2020-06-24","09:00-10:00","Rugby");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0002","Saman123","2020-06-24","09:00-10:00","Rugby");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0003","Vimal432","2020-06-25","10:00-11:00","FootBall");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0004","Vimal432","2020-06-24","10:00-11:00","Rugby");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0005","Vimal432","2020-06-24","09:00-10:00","Rugby");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0006","Sama123","2020-06-24","09:00-10:00","Rugby");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0007","Vimal432","2020-06-24","10:00-11:00","Rugby");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0008","Vimal432","2020-06-24","10:00-11:00","Rugby");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0008","Vimal432","2020-06-24","11:00-12:00","Rugby");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0008","Vimal432","2020-06-24","11:00-12:00","Rugby");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0002","Saman123","2020-06-24","13:00-14:00","Rugby");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0002","Saman123","2020-06-24","13:00-14:00","Rugby");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0002","Saman123","2020-06-24","13:00-14:00","Rugby");
+
+select * from bookings;
