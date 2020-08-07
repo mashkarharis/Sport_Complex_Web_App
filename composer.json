@@ -1,0 +1,28 @@
+{
+	"name" : "SportComplex",
+	"description" : "A project made to make the produres of Sport Complex easy",
+	"type" : "Web Application",
+	"homepage" : "index.php",
+	"minimum-stability" : "beta",
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "Musab Mahmood",
+			"role" : "Developer"
+		}, {
+			"name" : "Sandalu Karunasena",
+			"role" : "Developer"
+		}, {
+			"name" : "Ashkar M.H.M",
+			"role" : "Developer"
+		}, {
+			"name" : "Dineth ",
+			"role" : "Developer"
+		}
+	],
+	"support" : {},
+	"keywords" : [
+		"PHP",
+		"Web application",
+		"Sport Complex"
+	]
+}
