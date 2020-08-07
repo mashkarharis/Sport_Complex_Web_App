@@ -85,13 +85,12 @@
                             
 
                             <div class="col-md-12 col-sm-12">
-                                <label><h4>Select the date:</h4></label>
-                                <input type="date" class="form-control" id="frm-time" name="frm-time" placeholder="Select Date">
+                                <input type="datetime-local" class="form-control" value="2020-06-12T19:30" id="frm-time" name="frm-time" placeholder="Select Date">
                             </div>                            
 
                             <div class="clearfix"></div>
                             <div class="frm-btn">    
-                             <button type="submit" class="form-control " id="frm-submit" name="frm-submit">Check</button>
+                             <button type="submit" class="form-control" id="frm-submit" name="frm-submit">Check</button>
                             </div>    
                             <p>Already have an account: <a href="#login" data-toggle="modal">Sign in</a></p>
                             <p>New User: <a href="#signup"  data-toggle="modal">Sign up</a> get enjoyed</p>
@@ -122,13 +121,13 @@
                             <input type="password" name="password" class="form-control" placeholder="Password" required="required">					
                         </div>
                         <div class="form-group">
-                            <input type="submit" class="btn btn-primary btn-block btn-lg" value="signIn">
+                            <input type="submit" class="btn btn-primary btn-block btn-lg" value="Sign In">
                         </div>
                     </form>				
                     
                 </div>
                 <div class="modal-footer">
-                    <a href="#">Forgot Password?</a>
+                    <a href="forgetpwd.html">Forgot Password?</a>
                 </div>
             </div>
         </div>
@@ -138,7 +137,7 @@
         <div class="modal-dialog modal-login">
             <div class="modal-content">
                 <div class="modal-header">				
-                    <h4 class="modal-title">SignUp</h4>
+                    <h4 class="modal-title">Sign Up</h4>
                     <h5>Please fill the form to sign up</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
@@ -183,7 +182,7 @@
                             <input type="password" class="form-control" placeholder="Confirm Password" id="confirm_password" required="required">					
                         </div>
                         <div class="form-group">
-                            <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+                            <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="termsandcondition.html">Terms of Use</a> &amp; <a href="privacypolicy.html">Privacy Policy</a></label>
                         </div>
                         <div class="form-group">
                             <input type="submit" class="btn btn-primary btn-block btn-lg" value="SignUp">

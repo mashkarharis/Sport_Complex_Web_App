@@ -1,23 +1,17 @@
 <?php
-    require_once __DIR__."/../../controller/sportcontroller.controller.php";
-    require_once __DIR__."/../../model/Sport.model.php";
-    require_once __DIR__."/../../DB/DataBase.php";
+    require_once __DIR__."/../../controller/sportcontroller.php";
+    require_once __DIR__."/../../model/Sport.php";
     $sportcontroller = new SportController();    
     $list =$sportcontroller->get_data_for_set_price();
     foreach($list as $val){
-        $image = $val->get_imgname();
-        $name = $val->get_name();
-        $fee = $val->get_fee();
+        $image = $val['imgname'];
+        $name = $val['name'];
+        $fee = $val['fee'];
         echo ('<div class="col-md-4 col-sm-6 item">');
             echo ('<div class="facility-item">');
             echo ('<img src="images/'.$image.'"  class="img-responsive" alt="">');
             echo ('<div class="facility-overlay">');
-                                        
-                echo ('<ul class="book-icon">');
-                    echo ('<a href="">Log In To Book</a>');
-                    echo ('<li><span href="#" class="fa fa-bookmark"></span></li>');
-                                            
-                echo ('</ul>');
+                  
             echo ('</div>');
             echo ('</div>');
             echo ('<p>');

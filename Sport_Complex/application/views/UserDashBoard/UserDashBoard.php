@@ -60,7 +60,7 @@ $_SESSION['name']=$_SESSION['uname'];
                              <span class="mbri-devices mbr-iconfont mbr-iconfont-btn">
 
                              </span>View/Edit Full Profile &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> 
-                             <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-r"><span class="mbri-paper-plane mbr-iconfont mbr-iconfont-btn"></span>Member Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-t"><span class="mbri-flag mbr-iconfont mbr-iconfont-btn"></span>Sport Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-v"><span class="mbri-file mbr-iconfont mbr-iconfont-btn"></span>Booking Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-11"><span class="mbri-rocket mbr-iconfont mbr-iconfont-btn"></span>Equipment Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a>   
+                             <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-r"><span class="mbri-paper-plane mbr-iconfont mbr-iconfont-btn"></span>Member Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-t"><span class="mbri-flag mbr-iconfont mbr-iconfont-btn"></span>Sport Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-v"><span class="mbri-file mbr-iconfont mbr-iconfont-btn"></span>Booking Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-11"></a>   
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="https://mobirise.com">
@@ -299,7 +299,7 @@ $_SESSION['name']=$_SESSION['uname'];
 
             <div class="card p-3 col-12 col-md-6">
                 <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-italic"></span>
+                <a href='printmydetails.php'><span class="mbr-iconfont mbri-italic"></span></a>
                 </div>
                 <div class="card-box">
                     <h4 class="card-title py-3 mbr-fonts-style display-5">
@@ -332,14 +332,31 @@ $_SESSION['name']=$_SESSION['uname'];
                 <h2 class="align-left mbr-bold mbr-fonts-style display-2">Send Message To Admin</h2>
             </div>
             <div class="media-container-column col-12 col-lg-3 col-md-4">
-                <div class="mbr-section-btn align-right py-4"><a class="btn btn-primary display-4" href="https://mobirise.co">Send</a></div>
+                <div class="mbr-section-btn align-right py-4"><a class="btn btn-primary display-4" href="sendnotifications.php">Send</a></div>
             </div>
         </div>
     </div>
 </section>
 
 <section class="section-table cid-rYzCMZI09H" id="table1-z">
+<section class="mbr-section info1 cid-rYzxdAYqgT" id="info1-s">
 
+    
+
+    
+    <div class="container">
+        <div class="row justify-content-center content-row">
+            <div class="media-container-column title col-12 col-lg-7 col-md-6">
+                <h3 class="mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style display-5">
+                    My Mail Box</h3>
+                <h2 class="align-left mbr-bold mbr-fonts-style display-2">Check Your Mails</h2>
+            </div>
+            <div class="media-container-column col-12 col-lg-3 col-md-4">
+                <div class="mbr-section-btn align-right py-4"><a class="btn btn-primary display-4" href="mailbox.php">MailBox</a></div>
+            </div>
+        </div>
+    </div>
+</section>
   
   
   <div class="container container-table">
@@ -427,7 +444,7 @@ $_SESSION['name']=$_SESSION['uname'];
 
     
 
-    <div class="container">
+    <div class="container" >
         <div class="media-container-row">
             <div class="title col-12 col-md-8">
                 <h2 class="align-center pb-3 mbr-fonts-style display-2">Sports Details</h2>
@@ -449,7 +466,7 @@ $_SESSION['name']=$_SESSION['uname'];
 
             <div class="card p-3 col-12 col-md-6">
                 <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-responsive"></span>
+                <a href='viewsports.php'> <span class="mbr-iconfont mbri-responsive"></span></a>
                 </div>
                 <div class="card-box">
                     <h4 class="card-title py-3 mbr-fonts-style display-5">View Sport Details</h4>
@@ -457,6 +474,8 @@ $_SESSION['name']=$_SESSION['uname'];
                         View Sport Details</p>
                 </div>
             </div>
+
+            
 
             
 
@@ -652,17 +671,7 @@ $_SESSION['name']=$_SESSION['uname'];
 
             <div class="card p-3 col-12 col-md-6 col-lg-4">
                 <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-pages"></span>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5">View Bookings</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">Full Detail View of Booking</p>
-                </div>
-            </div>
-
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-close"></span>
+                <a href='removebooking.php'><span class="mbr-iconfont mbri-close"></span></a>
                 </div>
                 <div class="card-box">
                     <h4 class="card-title py-3 mbr-fonts-style display-5">
@@ -674,11 +683,11 @@ $_SESSION['name']=$_SESSION['uname'];
 
             <div class="card p-3 col-12 col-md-6 col-lg-4">
                 <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-add-submenu"></span>
+                <a href='../booking/index.php'><span class="mbr-iconfont mbri-italic"></span></a>
                 </div>
                 <div class="card-box">
                     <h4 class="card-title py-3 mbr-fonts-style display-5">
-                        Make Booking</h4>
+                        Maanage Booking</h4>
                     <p class="mbr-text mbr-fonts-style display-7">
                         Do Booking</p>
                 </div>
@@ -777,53 +786,7 @@ $_SESSION['name']=$_SESSION['uname'];
     </div>
 </section>
 
-<section class="mbr-section content4 cid-rYzEiFZgbD" id="content4-11">
 
-    
-
-    <div class="container">
-        <div class="media-container-row">
-            <div class="title col-12 col-md-8">
-                <h2 class="align-center pb-3 mbr-fonts-style display-2">
-                    View Equipments Details</h2>
-                <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">
-                    View Equipment Details</h3>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="features1 cid-rYzEysDYEG" id="features1-13">
-    
-    
-
-    
-    <div class="container">
-        <div class="media-container-row">
-
-            <div class="card p-3 col-12 col-md-6">
-                <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-setting"></span>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5">View Equipments</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        View Equipments in Complex</p>
-                </div>
-            </div>
-
-            
-
-            
-
-            
-
-        </div>
-
-    </div>
-
-</section>
 
 <section once="footers" class="cid-rYzEVoRgni" id="footer6-14">
 

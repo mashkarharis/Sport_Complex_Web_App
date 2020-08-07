@@ -61,7 +61,7 @@
                         <span class="mbri-devices mbr-iconfont mbr-iconfont-btn">
 
                         </span>View/Edit Full Profile &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a>
-                         <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-r"><span class="mbri-paper-plane mbr-iconfont mbr-iconfont-btn"></span>Member Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-t"><span class="mbri-flag mbr-iconfont mbr-iconfont-btn"></span>Sport Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-v"><span class="mbri-file mbr-iconfont mbr-iconfont-btn"></span>Booking Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-11"><span class="mbri-rocket mbr-iconfont mbr-iconfont-btn"></span>Equipment Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a>   
+                         <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-r"><span class="mbri-paper-plane mbr-iconfont mbr-iconfont-btn"></span>Member Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-t"><span class="mbri-flag mbr-iconfont mbr-iconfont-btn"></span>Sport Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-v"><span class="mbri-file mbr-iconfont mbr-iconfont-btn"></span>Booking Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-11"></a>   
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="https://mobirise.com">
@@ -290,7 +290,7 @@
 
             <div class="card p-3 col-12 col-md-6 col-lg-4">
                 <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-success"></span>
+                    <a href='approve.php'><span class="mbr-iconfont mbri-success"></span></a>
                 </div>
                 <div class="card-box">
                     <h4 class="card-title py-3 mbr-fonts-style display-5">Approve Membership</h4>
@@ -299,21 +299,21 @@
                 </div>
             </div>
 
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
+            <div class="card p-3 col-12 col-md-6">
                 <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-edit2"></span>
+                <a href='viewfullmemberdetails.php'><span class="mbr-iconfont mbri-print"></span></a>
                 </div>
                 <div class="card-box">
                     <h4 class="card-title py-3 mbr-fonts-style display-5">
-                        Edit Member</h4>
+                        View Full Member Details</h4>
                     <p class="mbr-text mbr-fonts-style display-7">
-                        Edit Details of Members</p>
+                        View All details of member except password</p>
                 </div>
             </div>
 
             <div class="card p-3 col-12 col-md-6 col-lg-4">
                 <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-close"></span>
+                    <a href='removemember.php'><span class="mbr-iconfont mbri-close"></span></a>
                 </div>
                 <div class="card-box">
                     <h4 class="card-title py-3 mbr-fonts-style display-5">
@@ -331,47 +331,6 @@
 
 </section>
 
-<section class="features1 cid-rYzuOfMLoQ" id="features1-o">
-    
-    
-
-    
-    <div class="container">
-        <div class="media-container-row">
-
-            <div class="card p-3 col-12 col-md-6">
-                <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-print"></span>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5">
-                        View Full Member Details</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        View All details of member except password</p>
-                </div>
-            </div>
-
-            <div class="card p-3 col-12 col-md-6">
-                <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-clock"></span>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5">
-                        Renew Membership</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        Renew membership</p>
-                </div>
-            </div>
-
-            
-
-            
-
-        </div>
-
-    </div>
-
-</section>
 
 <section class="mbr-section info1 cid-rYzxdAYqgT" id="info1-s">
 
@@ -386,11 +345,32 @@
                 <h2 class="align-left mbr-bold mbr-fonts-style display-2">Send Notification</h2>
             </div>
             <div class="media-container-column col-12 col-lg-3 col-md-4">
-                <div class="mbr-section-btn align-right py-4"><a class="btn btn-primary display-4" href="https://mobirise.co">Send</a></div>
+                <div class="mbr-section-btn align-right py-4"><a class="btn btn-primary display-4" href="sendnotifications.php">Send</a></div>
             </div>
         </div>
     </div>
 </section>
+
+<section class="section-table cid-rYzCMZI09H" id="table1-z">
+<section class="mbr-section info1 cid-rYzxdAYqgT" id="info1-s">
+
+    
+
+    
+    <div class="container">
+        <div class="row justify-content-center content-row">
+            <div class="media-container-column title col-12 col-lg-7 col-md-6">
+                <h3 class="mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style display-5">
+                    My Mail Box</h3>
+                <h2 class="align-left mbr-bold mbr-fonts-style display-2">Check Your Mails</h2>
+            </div>
+            <div class="media-container-column col-12 col-lg-3 col-md-4">
+                <div class="mbr-section-btn align-right py-4"><a class="btn btn-primary display-4" href="mailbox.php">MailBox</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <section class="section-table cid-rYzCMZI09H" id="table1-z">
 
@@ -505,7 +485,7 @@
 
             <div class="card p-3 col-12 col-md-6 col-lg-3">
                 <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-features"></span>
+                <a href="Addsport.php"><span class="mbr-iconfont mbri-features"></span></a>
                 </div>
                 <div class="card-box">
                     <h4 class="card-title py-3 mbr-fonts-style display-5">Add new Sport</h4>
@@ -516,7 +496,7 @@
 
             <div class="card p-3 col-12 col-md-6 col-lg-3">
                 <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-edit"></span>
+                    <a href="EditSport.php"><span class="mbr-iconfont mbri-edit"></span></a>
                 </div>
                 <div class="card-box">
                     <h4 class="card-title py-3 mbr-fonts-style display-5">
@@ -528,7 +508,7 @@
 
             <div class="card p-3 col-12 col-md-6 col-lg-3">
                 <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-close"></span>
+                <a href="removesports.php"><span class="mbr-iconfont mbri-close"></span></a>
                 </div>
                 <div class="card-box">
                     <h4 class="card-title py-3 mbr-fonts-style display-5">
@@ -540,7 +520,7 @@
 
             <div class="card p-3 col-12 col-md-6 col-lg-3">
                 <div class="card-img pb-3">
-                    <span class="mbri-desktop mbr-iconfont"></span>
+                    <a href="viewsports.php"><span class="mbri-desktop mbr-iconfont"></span></a>
                 </div>
                 <div class="card-box">
                     <h4 class="card-title py-3 mbr-fonts-style display-5">
@@ -739,7 +719,7 @@
 
             <div class="card p-3 col-12 col-md-6 col-lg-4">
                 <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-pages"></span>
+                    <a href='viewbookings.php'><span class="mbr-iconfont mbri-pages"></span></a>
                 </div>
                 <div class="card-box">
                     <h4 class="card-title py-3 mbr-fonts-style display-5">View Bookings</h4>
@@ -747,21 +727,10 @@
                 </div>
             </div>
 
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-close"></span>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5">
-                        Cancel Booking</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        Cancel Booking</p>
-                </div>
-            </div>
 
             <div class="card p-3 col-12 col-md-6 col-lg-4">
                 <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-like"></span>
+                <a href='sendnotifications.php'><span class="mbr-iconfont mbri-like"></span></a>
                 </div>
                 <div class="card-box">
                     <h4 class="card-title py-3 mbr-fonts-style display-5">
@@ -864,83 +833,6 @@
     </div>
 </section>
 
-<section class="mbr-section content4 cid-rYzEiFZgbD" id="content4-11">
-
-    
-
-    <div class="container">
-        <div class="media-container-row">
-            <div class="title col-12 col-md-8">
-                <h2 class="align-center pb-3 mbr-fonts-style display-2">
-                    Manage Equipments Details</h2>
-                <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">
-                    You Can Add,View,Remove,etc, Equipment</h3>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="features1 cid-rYzEysDYEG" id="features1-13">
-    
-    
-
-    
-    <div class="container">
-        <div class="media-container-row">
-
-            <div class="card p-3 col-12 col-md-6 col-lg-3">
-                <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-features"></span>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5">Add new Equipment</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        Add new Equipment to Complex</p>
-                </div>
-            </div>
-
-            <div class="card p-3 col-12 col-md-6 col-lg-3">
-                <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-edit"></span>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5">
-                        Edit Equipment</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        Edit Details of Equipment</p>
-                </div>
-            </div>
-
-            <div class="card p-3 col-12 col-md-6 col-lg-3">
-                <div class="card-img pb-3">
-                    <span class="mbr-iconfont mbri-close"></span>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5">
-                        Remove Equipment</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        Remove Equipment From Complex</p>
-                </div>
-            </div>
-
-            <div class="card p-3 col-12 col-md-6 col-lg-3">
-                <div class="card-img pb-3">
-                    <span class="mbri-desktop mbr-iconfont"></span>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5">
-                        View Equipment</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                       View Equipment Details</p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
 
 <section once="footers" class="cid-rYzEVoRgni" id="footer6-14">
 
