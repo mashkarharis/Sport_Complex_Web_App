@@ -6,7 +6,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     
     
     $uname=$_POST['uname'];
-    $password=($_POST['password']);
+    $password=md5($_POST['password']);
     
     $membercontroller = new MemberController();
     $membercontroller->gotodashboard($uname,$password);

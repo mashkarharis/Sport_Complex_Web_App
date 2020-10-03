@@ -46,10 +46,10 @@ previlege varchar(8),
 status varchar(20) 
 );
 
-insert into members (nicnumber,first_name,last_name,user_name,profile_pic,email,mobile_no,password,previlege,status) values ("0001V","Saman","Perera","Saman123","","Saman@gmail.com","0912323232","123123","admin","Active");
-insert into members (nicnumber,first_name,last_name,user_name,profile_pic,email,mobile_no,password,previlege,status) values ("0002V","Kamal","Silva","Kamal1232","","Kamal@gmail.com","0912322232","124123","user","Pending");
-insert into members (nicnumber,first_name,last_name,user_name,profile_pic,email,mobile_no,password,previlege,status) values ("0003V","Vimal","Amal","Vimal432","","vimal@gmail.com","0913323232","133123","user","Active");
-insert into members (nicnumber,first_name,last_name,user_name,profile_pic,email,mobile_no,password,previlege,status) values ("0004V","Vijitha","Roshan","Vijitha123","","viji@gmail.com","0913333232","123a23","user","Pending");
+insert into members (nicnumber,first_name,last_name,user_name,profile_pic,email,mobile_no,password,previlege,status) values ("0001V","Saman","Perera","Saman123","","Saman@gmail.com","0912323232","32250170a0dca92d53ec9624f336ca24","admin","Active");
+insert into members (nicnumber,first_name,last_name,user_name,profile_pic,email,mobile_no,password,previlege,status) values ("0002V","Kamal","Silva","Kamal1232","","Kamal@gmail.com","0912322232","32250170a0dca92d53ec9624f336ca24","user","Pending");
+insert into members (nicnumber,first_name,last_name,user_name,profile_pic,email,mobile_no,password,previlege,status) values ("0003V","Vimal","Amal","Vimal432","","vimal@gmail.com","0913323232","32250170a0dca92d53ec9624f336ca24","user","Active");
+insert into members (nicnumber,first_name,last_name,user_name,profile_pic,email,mobile_no,password,previlege,status) values ("0004V","Vijitha","Roshan","Vijitha123","","viji@gmail.com","0913333232","32250170a0dca92d53ec9624f336ca24","user","Pending");
 
 select * from members;
 
@@ -97,19 +97,19 @@ CREATE TABLE IF NOT EXISTS `bookings` (
   FOREIGN KEY (`sport`) REFERENCES sports(`name`),
   FOREIGN KEY (`uname`) REFERENCES members(`user_name`)
 );
-insert into bookings (booking_id,uname,date,slot,sport) values ("0001","Vimal432","2020-06-24","09:00-10:00","Swimming");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0002","Saman123","2020-06-24","09:00-10:00","Badminton");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0003","Vimal432","2020-06-25","10:00-11:00","Football");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0004","Vimal432","2020-06-24","10:00-11:00","Tabletennis");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0005","Vimal432","2020-06-24","09:00-10:00","Tabletennis");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0006","Sama123","2020-06-24","09:00-10:00","Football");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0007","Vimal432","2020-06-24","10:00-11:00","Swimming");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0008","Vimal432","2020-06-24","10:00-11:00","Swimming");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0008","Vimal432","2020-06-24","11:00-12:00","Badminton");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0008","Vimal432","2020-06-24","11:00-12:00","Badminton");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0002","Saman123","2020-06-24","13:00-14:00","Football");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0002","Saman123","2020-06-24","13:00-14:00","Football");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0002","Saman123","2020-06-24","13:00-14:00","Tabletennis");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0.04056701 1601723949","Vimal432","2020-06-24","09:00-10:00","Swimming");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0.04056702 1601723949","Saman123","2020-06-24","09:00-10:00","Badminton");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0.04056703 1601723949","Vimal432","2020-06-25","10:00-11:00","Football");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0.04056704 1601723949","Vimal432","2020-06-24","10:00-11:00","Tabletennis");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0.04056705 1601723949","Vimal432","2020-06-24","09:00-10:00","Tabletennis");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0.04056706 1601723949","Sama123","2020-06-24","09:00-10:00","Football");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0.04056707 1601723949","Vimal432","2020-06-24","10:00-11:00","Swimming");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0.04056708 1601723949","Vimal432","2020-06-24","10:00-11:00","Swimming");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0.04056709 1601723949","Vimal432","2020-06-24","11:00-12:00","Badminton");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0.04056710 1601723949","Vimal432","2020-06-24","11:00-12:00","Badminton");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0.04056711 1601723949","Saman123","2020-06-24","13:00-14:00","Football");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0.04056712 1601723949","Saman123","2020-06-24","13:00-14:00","Football");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0.04056713 1601723949","Saman123","2020-06-24","13:00-14:00","Tabletennis");
 
 select * from bookings;
 

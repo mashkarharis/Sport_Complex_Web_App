@@ -1,7 +1,18 @@
+
+
 <?php
     session_start();
+    if(!isset($_SESSION['uname']) | $_SESSION['privilege']!="admin"){
+        echo("<h1>NO PRIVILEGE TO ACCESS ...</h1>");
+        die();
+    }
     $_SESSION['name']=$_SESSION['uname'];
+
     
+    
+?>
+<?php
+
 ?>
 <!DOCTYPE html>
 <html  >

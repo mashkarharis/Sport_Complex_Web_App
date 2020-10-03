@@ -46,9 +46,32 @@
                     <li><a href="#facility" class="smoothScroll">Our Sports</a></li>  
                     <li><a href="#service" class="smoothScroll">Services</a></li>
                     <li><a href="#aboutus" class="smoothScroll">About Us</a></li>
-                    <li><a href="#login" class="smoothScroll" data-toggle="modal">LogIn</a></li>
+                    <?php 
+                    session_start();
+                    if(!isset($_SESSION['uname'])){
                     
-                    <li><a href="#signup" class="smoothScroll" data-toggle="modal">SignUp</a></li>
+                        echo('<li><a href="#login" class="smoothScroll" data-toggle="modal">LogIn</a></li>');
+                    
+                        echo('<li><a href="#signup" class="smoothScroll" data-toggle="modal">SignUp</a></li>');
+                    
+                    }
+                    elseif($_SESSION['privilege']=="admin"){
+                        
+                        echo('<a >Logged In As : '.$_SESSION['uname'].'</a>');
+                        echo('<li><a href="../AdminDashBoard/AdminDashBoard.php" class="smoothScroll" data-toggle="modal">Admin DashBoard</a></li>');
+                        echo('<div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="logout.php"><span class="mbri-logout mbr-iconfont mbr-iconfont-btn"></span>Log Out</a></div>');
+                    
+                    }
+                    elseif($_SESSION['privilege']=="user"){
+                        
+                        echo('<a >Logged In As : '.$_SESSION['uname'].'</a>');
+                        echo('<li><a href="../UserDashBoard/UserDashBoard.php" class="smoothScroll" data-toggle="modal">User DashBoard</a></li>');
+                        echo('<div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="logout.php"><span class="mbri-logout mbr-iconfont mbr-iconfont-btn"></span>Log Out</a></div>');
+                    
+                    }
+                    
+                    ?>
+
                 </ul>
             </div>
 

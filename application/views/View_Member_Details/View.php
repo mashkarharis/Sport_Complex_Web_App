@@ -148,14 +148,12 @@
                     </div>
                     <div class="dragArea row">
                         <div class="col  form-group" data-for="name">
-                            <label for="name-form1-5" class="form-control-label mbr-fonts-style display-7">Password</label>
-                            <input type="password" name="password" placeholder = "password" data-form-field="Name" required="required" class="form-control display-7"  value="<?php echo $_SESSION['231password'] ?>" id="password">
+                            <input type="password" name="password" placeholder = "password" data-form-field="Name" required="required" class="form-control display-7"  value="<?php echo $_SESSION['231password'] ?>" id="password" hidden>
                         </div>
                     </div>
                     <div class="dragArea row">
                         <div class="col  form-group" data-for="name">
-                            <label for="name-form1-5" class="form-control-label mbr-fonts-style display-7">Confirm Password</label>
-                            <input type="password" name="conpassword" placeholder= "conpassword" data-form-field="Name" required="required" class="form-control display-7" value="<?php echo $_SESSION['231password'] ?>" id="conpassword">
+                            <input type="password" name="conpassword" placeholder= "conpassword" data-form-field="Name" required="required" class="form-control display-7" value="<?php echo $_SESSION['231password'] ?>" id="conpassword" hidden>
                         </div>
                     </div>
                     <div class="dragArea row">
@@ -187,7 +185,7 @@
         <div class="media-container-row align-center mbr-white">
             <div class="col-12">
                 <p class="mbr-text mb-0 mbr-fonts-style display-7">
-                    © Copyright 2019 OOSD- All Rights Reserved
+                    ï¿½ Copyright 2019 OOSD- All Rights Reserved
                 </p>
             </div>
         </div>

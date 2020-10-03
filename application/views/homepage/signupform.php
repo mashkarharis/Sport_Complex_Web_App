@@ -8,7 +8,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
   $uname=$_POST['uname'];
   $email=$_POST['email'];
   $mobileno=$_POST['contact'];
-  $password=$_POST['password'];
+  $password=md5($_POST['password']);
   $nid=$_POST['id'];
 
   $membercontroller = new MemberController();

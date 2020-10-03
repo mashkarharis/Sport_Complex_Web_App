@@ -42,6 +42,9 @@ class URLController{
     }
     public function logout(){
         session_start();
+        if(isset($_SESSION['uname'])){
+            session_unset();
+        }
         header('Location: ../homepage/index.php');
     }
     public function viewfullmemberdetails(){
