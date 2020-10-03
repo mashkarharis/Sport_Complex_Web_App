@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebApp</title>
 
@@ -42,11 +43,12 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#home" class="smoothScroll">Home</a></li>
-                    <li><a href="#trial" class="smoothScroll">Check Free Slots</a></li>
                     <li><a href="#facility" class="smoothScroll">Our Sports</a></li>  
                     <li><a href="#service" class="smoothScroll">Services</a></li>
                     <li><a href="#aboutus" class="smoothScroll">About Us</a></li>
-                    <li><a href="#login" class="smoothScroll" data-toggle="modal">Login</a></li>
+                    <li><a href="#login" class="smoothScroll" data-toggle="modal">LogIn</a></li>
+                    
+                    <li><a href="#signup" class="smoothScroll" data-toggle="modal">SignUp</a></li>
                 </ul>
             </div>
 
@@ -72,35 +74,7 @@
 
         <img src="./images/hmpg.jpg" alt="">
     </section>
-    <!-- trial -->
-    <section id="trial" class="parallax-section">
-        <div class="container">
-            <div class="row">
-
-                <h1>Check Free Slots</h1>
-                <div class="col-md-offset-2 col-md-8 col-sm-12">
-                    <!-- trial FORM HERE -->
-                    <form id="trial-form" action="#" method="post" role="form">
-
-                            
-
-                            <div class="col-md-12 col-sm-12">
-                                <input type="datetime-local" class="form-control" value="2020-06-12T19:30" id="frm-time" name="frm-time" placeholder="Select Date">
-                            </div>                            
-
-                            <div class="clearfix"></div>
-                            <div class="frm-btn">    
-                             <button type="submit" class="form-control" id="frm-submit" name="frm-submit">Check</button>
-                            </div>    
-                            <p>Already have an account: <a href="#login" data-toggle="modal">Sign in</a></p>
-                            <p>New User: <a href="#signup"  data-toggle="modal">Sign up</a> get enjoyed</p>
-                            
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </section>
+    
     <!-- Sign in -->
 
     <div id="login" class="modal fade">
@@ -283,50 +257,48 @@ confirm_password.onkeyup = validatePassword;
 
                 <div class="col-12">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <h2>Our mission</h2>
                             <i class="fa fa-adjust" style="font-size: 50px;"></i>
                             <p>Our Mission is to serve our cutomers with high quality experience in sport sector.</p>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <h2>Our Vision</h2>
                             <i class="fa fa-empire" style="font-size: 50px;"></i>
                             <p>Our vision is to become the one of qualitiest sport service provider in the country with large amount of members.</p>
                         </div>
-                        
-                    </div>
-                    
-                    
-                    
-               </div>
-               <br>
-               <br>
-               <div class="col-12">
-               		
-                <h2>About Us</h2>
-                <p> We are one of the best sport service provider with large number of customers in Sri Lanka. We are here to serve you. </p>
-                <ul class="social-icon">
+
+                        <div class="col-md-4">
+                        <div class="footer-info">
+                        <h2>Our Contacts</h2>
+                        <ul class="social-icon">
                      <li><a href="https://twitter.com/" class="fa fa-twitter"></a></li>
                      <li><a href="https://www.facebook.com/" class="fa fa-facebook"></a></li>
-                     <li><a href="https://www.instagram.com/" class="fa fa-instagram"></a></li>
-                     <li><a href="https://www.linkedin.com/" class="fa fa-linkedin"></a></li>
-                </ul>
-                
-                </div>
-               <div class="col-12">
-                    <div class="footer-info">
-                    	<h2>Keep in touch</h2>
+                     </ul>
+                     <ul class="social-icon">
+                         <li><a href="https://www.instagram.com/" class="fa fa-instagram"></a></li>
+                        <li><a href="https://www.linkedin.com/" class="fa fa-linkedin"></a></li>
+                    </ul>
                          <p>Call Us  : <a href="">091XXXXXXX</a></p>
                          <p>Email Us : <a href="">info@company.com</a></p>
-                         <p>We Are On Google Map</p>
-                         <p><img src="../homepage/images/Capture.JPG" alt="ad"/></p>
+                         
+                    </div></div>
+
+
+                        
+
+
+
+
+                        
                     </div>
-                   
-                   
-                   
-               </div>
-               
-               <div class="clearfix"></div>
+                </div>
+               <br>
+               <br>
+
+              
+
+                <div class="clearfix"></div>
 
                 <div class="col-md-12 col-sm-12">
                     <div class="copyright-text">

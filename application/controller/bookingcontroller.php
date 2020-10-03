@@ -22,7 +22,6 @@ class bookingcontroller{
         
     }
     public function removebookingbymember($uname,$date,$lasttime){
-        session_start();
         $url = new URLController();
         $data = $this->bookingmodel->getbookingsbymember($uname,$date,$lasttime); // Common 
         $url->loadremovebookingdetails($data);

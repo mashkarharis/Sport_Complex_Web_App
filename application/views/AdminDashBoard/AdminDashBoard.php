@@ -74,7 +74,7 @@
     </nav>
 </section>
 
-<section class="engine"><a href="https://mobirise.info/p">web templates free download</a></section><section class="counters2 counters cid-rYz8nPfenH" id="counters2-3">
+<section class="counters2 counters cid-rYz8nPfenH" id="counters2-3">
 
     
 
@@ -152,28 +152,7 @@
         </div>
     </div>
 </section>
-
-<section class="countdown1 cid-rYz9Tr8zMH" id="countdown1-j">
-    
-    
-    
-    <div class="container ">
-        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">
-            Next Event</h2>
-        <h3 class="mbr-section-subtitle align-center mbr-fonts-style display-5">
-            Event of Annual Swimming Competition Will Star Within</h3>
-        
-    </div>
-    <div class="container countdown-cont align-center">
-        <div class="daysCountdown col-xs-3 col-sm-3 col-md-3" title="Days"></div>
-        <div class="hoursCountdown col-xs-3 col-sm-3 col-md-3" title="Hours"></div> 
-        <div class="minutesCountdown col-xs-3 col-sm-3 col-md-3" title="Minutes"></div> 
-        <div class="secondsCountdown col-xs-3 col-sm-3 col-md-3" title="Seconds"></div>
-        <div class="countdown pt-5 mt-2" data-due-date="2018/01/01"> 
-        </div>
-    </div>
-</section>
-
+<div style="height: 70px; background-color: #b2ccd2;"></div>
 <section class="counters1 counters cid-rYztgGjkR8" id="counters1-m">
 
     
@@ -186,81 +165,46 @@
         <h3 class="mbr-section-subtitle mbr-fonts-style display-5">
             Why you should choose us&nbsp;</h3>
 
-        <div class="container pt-4 mt-2">
-            <div class="media-container-row">
-                <div class="card p-3 align-center col-12 col-md-6 col-lg-3">
-                    <div class="panel-item p-3">
-                        <div class="card-img pb-3">
-                            <span class="mbr-iconfont mbrib-users"></span>
-                        </div>
+        <?php include_once "wehave.php"; ?>   
+    </div>
+</section>
 
-                        <div class="card-text">
-                            <h3 class="count pt-3 pb-3 mbr-fonts-style display-2">
-                                  100
-                            </h3>
-                            <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">Members</h4>
-                            <p class="mbr-content-text mbr-fonts-style display-7">
-                                Members are our strength.&nbsp;</p>
-                        </div>
-                    </div>
-                </div>
+<section class="mbr-section info1 cid-rYzxdAYqgT" id="info1-s">
 
+    
 
-                <div class="card p-3 align-center col-12 col-md-6 col-lg-3">
-                    <div class="panel-item p-3">
-                        <div class="card-img pb-3">
-                            <span class="mbr-iconfont mbri-setting"></span>
-                        </div>
-                        <div class="card-text">
-                            <h3 class="count pt-3 pb-3 mbr-fonts-style display-2">
-                                  200
-                            </h3>
-                            <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
-                                Equipments</h4>
-                            <p class="mbr-content-text mbr-fonts-style display-7">
-                                    Best Game Need Best Equipments</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card p-3 align-center col-12 col-md-6 col-lg-3">
-                    <div class="panel-item p-3">
-                        <div class="card-img pb-3">
-                            <span class="mbr-iconfont mbri-flag"></span>
-                        </div>
-                        <div class="card-text">
-                            <h3 class="count pt-3 pb-3 mbr-fonts-style display-2">
-                                  300
-                            </h3>
-                            <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
-                                Sports</h4>
-                            <p class="mbr-content-text mbr-fonts-style display-7">
-                                    This is our service</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card p-3 align-center col-12 col-md-6 col-lg-3">
-                    <div class="panel-item p-3">
-                        <div class="card-img pb-3">
-                            <span class="mbr-iconfont mbri-rocket"></span>
-                        </div>
-
-                        <div class="card-texts">
-                             <h3 class="count pt-3 pb-3 mbr-fonts-style display-2">
-                                  400
-                            </h3>
-                            <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
-                                Capacity</h4>
-                            <p class="mbr-content-text mbr-fonts-style display-7">
-                                    Number of persons can play at once</p>
-                        </div>
-                    </div>
-                </div>
+    
+    <div class="container">
+        <div class="row justify-content-center content-row">
+            <div class="media-container-column title col-12 col-lg-7 col-md-6">
+                <h3 class="mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style display-5">
+                    Send Notification To Member</h3>
+                <h2 class="align-left mbr-bold mbr-fonts-style display-2">Send Notification</h2>
+            </div>
+            <div class="media-container-column col-12 col-lg-3 col-md-4">
+                <div class="mbr-section-btn align-right py-4"><a class="btn btn-primary display-4" href="sendnotifications.php">Send</a></div>
             </div>
         </div>
-   </div>
+    </div>
+</section>
+
+<section class="mbr-section info1 cid-rYzxdAYqgT" id="info1-s">
+
+    
+
+    
+    <div class="container">
+        <div class="row justify-content-center content-row">
+            <div class="media-container-column title col-12 col-lg-7 col-md-6">
+                <h3 class="mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style display-5">
+                    My Mail Box</h3>
+                <h2 class="align-left mbr-bold mbr-fonts-style display-2">Check Your Mails</h2>
+            </div>
+            <div class="media-container-column col-12 col-lg-3 col-md-4">
+                <div class="mbr-section-btn align-right py-4"><a class="btn btn-primary display-4" href="mailbox.php">MailBox</a></div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="mbr-section content4 cid-rYzvn5TyDQ" id="content4-r">
@@ -331,132 +275,8 @@
 
 </section>
 
+<div style="height: 70px; background-color: #b2ccd2;"></div>
 
-<section class="mbr-section info1 cid-rYzxdAYqgT" id="info1-s">
-
-    
-
-    
-    <div class="container">
-        <div class="row justify-content-center content-row">
-            <div class="media-container-column title col-12 col-lg-7 col-md-6">
-                <h3 class="mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style display-5">
-                    Send Notification To Member</h3>
-                <h2 class="align-left mbr-bold mbr-fonts-style display-2">Send Notification</h2>
-            </div>
-            <div class="media-container-column col-12 col-lg-3 col-md-4">
-                <div class="mbr-section-btn align-right py-4"><a class="btn btn-primary display-4" href="sendnotifications.php">Send</a></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section-table cid-rYzCMZI09H" id="table1-z">
-<section class="mbr-section info1 cid-rYzxdAYqgT" id="info1-s">
-
-    
-
-    
-    <div class="container">
-        <div class="row justify-content-center content-row">
-            <div class="media-container-column title col-12 col-lg-7 col-md-6">
-                <h3 class="mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style display-5">
-                    My Mail Box</h3>
-                <h2 class="align-left mbr-bold mbr-fonts-style display-2">Check Your Mails</h2>
-            </div>
-            <div class="media-container-column col-12 col-lg-3 col-md-4">
-                <div class="mbr-section-btn align-right py-4"><a class="btn btn-primary display-4" href="mailbox.php">MailBox</a></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="section-table cid-rYzCMZI09H" id="table1-z">
-
-  
-  
-  <div class="container container-table">
-      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-2">
-          Member List&nbsp;</h2>
-      <h3 class="mbr-section-subtitle mbr-fonts-style align-center pb-5 mbr-light display-5">
-            Basic member details</h3>
-      <div class="table-wrapper">
-        <div class="container">
-          <div class="row search">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">
-                <div class="dataTables_filter">
-                  <label class="searchInfo mbr-fonts-style display-7">Search:</label>
-                  <input class="form-control input-sm" disabled="">
-                </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container scroll">
-          <table class="table isSearch" cellspacing="0">
-            <thead>
-              <tr class="table-heads ">
-                  
-                  
-                  
-                  
-              <th class="head-item mbr-fonts-style display-7">
-                      NIC</th><th class="head-item mbr-fonts-style display-7">
-                      NAME</th><th class="head-item mbr-fonts-style display-7">
-                      EMAIL</th><th class="head-item mbr-fonts-style display-7">
-                      MOBILE NO.</th><th class="head-item mbr-fonts-style display-7">
-                      PREVILEGE</th><th class="head-item mbr-fonts-style display-7">
-                      STATUS</th></tr>
-            </thead>
-
-            <tbody>
-              
-              
-              
-              
-            <tr> 
-                
-                
-                
-                
-              <td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td><td class="body-item mbr-fonts-style display-7">44</td><td class="body-item mbr-fonts-style display-7">2016-10-17</td><td class="body-item mbr-fonts-style display-7">$317.000</td><td class="body-item mbr-fonts-style display-7">$317.000</td><td class="body-item mbr-fonts-style display-7">$317.000</td></tr><tr>
-                
-                
-                
-                
-              <td class="body-item mbr-fonts-style display-7">Caren Rials</td><td class="body-item mbr-fonts-style display-7">35</td><td class="body-item mbr-fonts-style display-7">2013-04-12</td><td class="body-item mbr-fonts-style display-7">$445.500</td><td class="body-item mbr-fonts-style display-7">$445.500</td><td class="body-item mbr-fonts-style display-7">$445.500</td></tr><tr>
-                
-                
-                
-                
-              <td class="body-item mbr-fonts-style display-7">Leon Rogol</td><td class="body-item mbr-fonts-style display-7">66</td><td class="body-item mbr-fonts-style display-7">2016-05-22</td><td class="body-item mbr-fonts-style display-7">$152.558</td><td class="body-item mbr-fonts-style display-7">$152.558</td><td class="body-item mbr-fonts-style display-7">$152.558</td></tr><tr>
-                
-                
-                
-                
-              <td class="body-item mbr-fonts-style display-7">Shala Barrera</td><td class="body-item mbr-fonts-style display-7">70</td><td class="body-item mbr-fonts-style display-7">2016-05-15</td><td class="body-item mbr-fonts-style display-7">$459.146</td><td class="body-item mbr-fonts-style display-7">$459.146</td><td class="body-item mbr-fonts-style display-7">$459.146</td></tr></tbody>
-          </table>
-        </div>
-        <div class="container table-info-container">
-          <div class="row info">
-            <div class="col-md-6">
-              <div class="dataTables_info mbr-fonts-style display-7">
-                <span class="infoBefore">Showing</span>
-                <span class="inactive infoRows"></span>
-                <span class="infoAfter">entries</span>
-                <span class="infoFilteredBefore">(filtered from</span>
-                <span class="inactive infoRows"></span>
-                <span class="infoFilteredAfter"> total entries)</span>
-              </div>
-            </div>
-            <div class="col-md-6"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
 
 <section class="mbr-section content4 cid-rYzA3r0b8t" id="content4-t">
 
@@ -535,162 +355,7 @@
     </div>
 
 </section>
-
-<section class="section-table cid-rYzvaRJlb2" id="table1-q">
-
-  
-  
-  <div class="container container-table">
-      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5">
-          Open Close Times</h2>
-      
-      <div class="table-wrapper">
-        <div class="container">
-          
-        </div>
-
-        <div class="container scroll">
-          <table class="table" cellspacing="0">
-            <thead>
-              <tr class="table-heads ">
-                  
-                  
-                  
-                  
-              <th class="head-item mbr-fonts-style display-7">
-                      NAME</th><th class="head-item mbr-fonts-style display-7">
-                      NAME</th><th class="head-item mbr-fonts-style display-7">
-                      NAME</th><th class="head-item mbr-fonts-style display-7">
-                      NAME</th></tr>
-            </thead>
-
-            <tbody>
-              
-              
-              
-              
-            <tr> 
-                
-                
-                
-                
-              <td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td><td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td><td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td><td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td></tr><tr>
-                
-                
-                
-                
-              <td class="body-item mbr-fonts-style display-7">Caren Rials</td><td class="body-item mbr-fonts-style display-7">Caren Rials</td><td class="body-item mbr-fonts-style display-7">Caren Rials</td><td class="body-item mbr-fonts-style display-7">Caren Rials</td></tr><tr>
-                
-                
-                
-                
-              <td class="body-item mbr-fonts-style display-7">Leon Rogol</td><td class="body-item mbr-fonts-style display-7">Leon Rogol</td><td class="body-item mbr-fonts-style display-7">Leon Rogol</td><td class="body-item mbr-fonts-style display-7">Leon Rogol</td></tr><tr>
-                
-                
-                
-                
-              <td class="body-item mbr-fonts-style display-7">Shala Barrera</td><td class="body-item mbr-fonts-style display-7">Shala Barrera</td><td class="body-item mbr-fonts-style display-7">Shala Barrera</td><td class="body-item mbr-fonts-style display-7">Shala Barrera</td></tr><tr>
-                
-                
-                
-                
-              <td class="body-item mbr-fonts-style display-7">Shala Barrera</td><td class="body-item mbr-fonts-style display-7">Shala Barrera</td><td class="body-item mbr-fonts-style display-7">Shala Barrera</td><td class="body-item mbr-fonts-style display-7">Shala Barrera</td></tr></tbody>
-          </table>
-        </div>
-        <div class="container table-info-container">
-          
-        </div>
-      </div>
-    </div>
-</section>
-
-<section class="services5 cid-rYzuYHI6Ud" id="services5-p">
-    <!---->
-    
-    <!---->
-    <!--Overlay-->
-    
-    <!--Container-->
-    <div class="container">
-        <div class="row">
-            <!--Titles-->
-            <div class="title pb-5 col-12">
-                <h2 class="align-left mbr-fonts-style m-0 display-5">
-                    Sport Price Per Hour</h2>
-                
-            </div>
-            <!--Card-1-->
-            <div class="card px-3 col-12">
-                <div class="card-wrapper media-container-row media-container-row">
-                    <div class="card-box">
-                        <div class="top-line pb-3">
-                            <h4 class="card-title mbr-fonts-style display-5">
-                                Watch 1
-                            </h4>
-                            <p class="mbr-text cost mbr-fonts-style m-0 display-5">
-                                Rs.100</p>
-                        </div>
-                        <div class="bottom-line">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Card-2-->
-            <div class="card px-3 col-12">
-                <div class="card-wrapper media-container-row media-container-row">
-                    <div class="card-box">
-                        <div class="top-line pb-3">
-                            <h4 class="card-title mbr-fonts-style display-5">
-                                Watch 2
-                            </h4>
-                            <p class="mbr-text cost mbr-fonts-style m-0 display-5">
-                                Rs.200</p>
-                        </div>
-                        <div class="bottom-line">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Card-3-->
-            <div class="card px-3 col-12">
-                <div class="card-wrapper media-container-row media-container-row">
-                    <div class="card-box">
-                        <div class="top-line pb-3">
-                            <h4 class="card-title mbr-fonts-style display-5">
-                                Watch 3
-                            </h4>
-                            <p class="mbr-text cost mbr-fonts-style m-0 display-5">
-                                Rs.300</p>
-                        </div>
-                        <div class="bottom-line">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Card-4-->
-            
-            <!--Card-5-->
-            
-            <!--Card-6-->
-            
-            <!--Card-7-->
-            
-            <!--Card-8-->
-            
-            <!--Card-9-->
-            
-            <!--Card-10-->
-            
-            <!--Card-11-->
-            
-            <!--Card-12-->
-            
-        </div>
-    </div>
-</section>
+<div style="height: 70px; background-color: #b2ccd2;"></div>
 
 <section class="mbr-section content4 cid-rYzAHOB1Cf" id="content4-v">
 
@@ -747,93 +412,9 @@
     </div>
 
 </section>
+ 
 
-<section class="section-table cid-rYzDLXNBpV" id="table1-10">
-
-  
-  
-  <div class="container container-table">
-      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-2">
-          Booking List&nbsp;</h2>
-      <h3 class="mbr-section-subtitle mbr-fonts-style align-center pb-5 mbr-light display-5">
-            Basic Booking Details</h3>
-      <div class="table-wrapper">
-        <div class="container">
-          <div class="row search">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">
-                <div class="dataTables_filter">
-                  <label class="searchInfo mbr-fonts-style display-7">Search:</label>
-                  <input class="form-control input-sm" disabled="">
-                </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container scroll">
-          <table class="table isSearch" cellspacing="0">
-            <thead>
-              <tr class="table-heads ">
-                  
-                  
-                  
-                  
-              <th class="head-item mbr-fonts-style display-7">BID</th><th class="head-item mbr-fonts-style display-7">
-                      Person</th><th class="head-item mbr-fonts-style display-7">
-                      Sport</th><th class="head-item mbr-fonts-style display-7">
-                      Date</th><th class="head-item mbr-fonts-style display-7">
-                      Time</th><th class="head-item mbr-fonts-style display-7">
-                      Status</th></tr>
-            </thead>
-
-            <tbody>
-              
-              
-              
-              
-            <tr> 
-                
-                
-                
-                
-              <td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td><td class="body-item mbr-fonts-style display-7">44</td><td class="body-item mbr-fonts-style display-7">2016-10-17</td><td class="body-item mbr-fonts-style display-7">$317.000</td><td class="body-item mbr-fonts-style display-7">$317.000</td><td class="body-item mbr-fonts-style display-7">$317.000</td></tr><tr>
-                
-                
-                
-                
-              <td class="body-item mbr-fonts-style display-7">Caren Rials</td><td class="body-item mbr-fonts-style display-7">35</td><td class="body-item mbr-fonts-style display-7">2013-04-12</td><td class="body-item mbr-fonts-style display-7">$445.500</td><td class="body-item mbr-fonts-style display-7">$445.500</td><td class="body-item mbr-fonts-style display-7">$445.500</td></tr><tr>
-                
-                
-                
-                
-              <td class="body-item mbr-fonts-style display-7">Leon Rogol</td><td class="body-item mbr-fonts-style display-7">66</td><td class="body-item mbr-fonts-style display-7">2016-05-22</td><td class="body-item mbr-fonts-style display-7">$152.558</td><td class="body-item mbr-fonts-style display-7">$152.558</td><td class="body-item mbr-fonts-style display-7">$152.558</td></tr><tr>
-                
-                
-                
-                
-              <td class="body-item mbr-fonts-style display-7">Shala Barrera</td><td class="body-item mbr-fonts-style display-7">70</td><td class="body-item mbr-fonts-style display-7">2016-05-15</td><td class="body-item mbr-fonts-style display-7">$459.146</td><td class="body-item mbr-fonts-style display-7">$459.146</td><td class="body-item mbr-fonts-style display-7">$459.146</td></tr></tbody>
-          </table>
-        </div>
-        <div class="container table-info-container">
-          <div class="row info">
-            <div class="col-md-6">
-              <div class="dataTables_info mbr-fonts-style display-7">
-                <span class="infoBefore">Showing</span>
-                <span class="inactive infoRows"></span>
-                <span class="infoAfter">entries</span>
-                <span class="infoFilteredBefore">(filtered from</span>
-                <span class="inactive infoRows"></span>
-                <span class="infoFilteredAfter"> total entries)</span>
-              </div>
-            </div>
-            <div class="col-md-6"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
-
-
+<div style="height: 70px; background-color: #b2ccd2;"></div>
 <section once="footers" class="cid-rYzEVoRgni" id="footer6-14">
 
     

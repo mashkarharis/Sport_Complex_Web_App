@@ -106,7 +106,7 @@ class URLController{
     public function loadremovebookingdetails($data){
         session_start();
         $_SESSION['booking_id']=$data['booking_id'];
-        $_SESSION['uname']=$data['uname'];
+        $_SESSION['uname']=$_SESSION['uname'];
         $_SESSION['date']=$data['date'];
         $_SESSION['slot']=$data['slot'];
         $_SESSION['sport']=$data['sport'];
@@ -140,10 +140,12 @@ class URLController{
     }
     public function sendnotificationsbyuser(){
         session_start();
+        
         header('Location: ../../views/Send_Notifications_By_User/View.php');
     }
     public function removebookingmember(){
         session_start();
+        $_SESSION['uname']=$_SESSION['uname'];
         header('Location: ../../views/Member-cancel-booking/View.php');
     }
     public function viewmymailboxmemberdetails(){

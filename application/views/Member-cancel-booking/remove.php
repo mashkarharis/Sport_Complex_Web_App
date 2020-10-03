@@ -6,7 +6,7 @@ require_once __DIR__."/../../controller/bookingcontroller.php";
 
 
 
-$uname = $_SESSION['name']; 
+$uname = $_SESSION['uname']; 
 $date =  date("Y-m-d", strtotime($_POST['Date']));
 $time = $_POST['Time'];
 echo($date.'\n');

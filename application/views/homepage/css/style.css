@@ -311,7 +311,7 @@ TRIAL
   
   #trial-form {
     padding-top: 26px;
-    font-weight: bold;
+    font-weight: bolder;
   }
   
  
@@ -369,6 +369,7 @@ TRIAL
     margin-bottom: 22px;
   }
   
+  
   #facility h3{
   	margin: 0;
   	font-weight: bold;
@@ -396,12 +397,7 @@ TRIAL
   margin-right: auto;
   width: 50%;
   }
-  .facility-item:hover img {
-  }
   
-  .facility-overlay {
-    
-  }
 .book-icon{
       font-size: 30px;
       color: #14a390;

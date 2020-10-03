@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php session_start();
+$_SESSION['uname']=$_SESSION['uname'];
+?>
 <!DOCTYPE html>
 <html  >
 <head>
@@ -83,6 +85,7 @@
                         </div>
                     </div>
                     <div class="dragArea row">
+                    
                         <div class="col  form-group" data-for="Date">
                             <label for="name-form1-5" class="form-control-label mbr-fonts-style display-7">Date Of Booking</label>
                             <input type="Date"  name="Date" id="Date" data-form-field="Date" required="required" class="form-control display-7"  id="Date" >

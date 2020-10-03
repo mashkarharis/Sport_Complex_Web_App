@@ -1,14 +1,14 @@
-drop database webapp;
-create database webapp;
-use webapp;
+drop database webappfinalized;
+create database webappfinalized;
+use webappfinalized;
 
 // Sports;
  
 CREATE TABLE sports (
 name VARCHAR(30) NOT NULL PRIMARY KEY ,
 maxplay INT(6) UNSIGNED default 10,
-fee INT(10) UNSIGNED default 500,
-imgname VARCHAR(30) default 'rgby.png' ,
+fee INT(10) UNSIGNED default 200,
+imgname VARCHAR(5000) default '' ,
 mon_open_at TIME default '08:00:00' ,
 mon_close_at TIME default '18:00:00',
 tue_open_at TIME default '08:00:00',
@@ -24,10 +24,10 @@ sat_close_at TIME default '18:00:00',
 sun_open_at TIME default '08:00:00',
 sun_close_at TIME default '18:00:00'
 );
-
-insert into sports (name,maxplay,fee,mon_open_at) values ('Rugby',20,200,'09:00:00');
-insert into sports (name,IMGNAME,mon_CLOSE_at) values ('Basketball','bskt.png','09:00:00');
-insert into sports (name,IMGNAME,mon_CLOSE_at) values ('FootBall','bg-tri.png','19:00:00');
+insert into sports (name,IMGNAME,maxplay,fee,mon_open_at) values ('Swimming'.'https://www.pngitem.com/pimgs/m/119-1192935_black-and-white-swimming-png-swimming-icon-png.png',6,150,'08:00:00');
+insert into sports (name,IMGNAME,maxplay,fee,mon_open_at) values ('Badminton','https://st2.depositphotos.com/8663904/11553/v/950/depositphotos_115536498-stock-illustration-badminton-icon-black-icon-on.jpg',20,130,'08:00:00');
+insert into sports (name,IMGNAME,mon_CLOSE_at) values ('Tabletennis','https://www.colourbox.com/preview/19165621-table-tennis-simple-icon.jpg','08:00:00');
+insert into sports (name,IMGNAME,mon_CLOSE_at) values ('Football','https://www.pinclipart.com/picdir/big/133-1331729_black-and-white-football-clipart-soccer-ball-png.png','08:00:00');
 
 select * from sports;
 
@@ -47,14 +47,14 @@ status varchar(20)
 );
 
 insert into members (nicnumber,first_name,last_name,user_name,profile_pic,email,mobile_no,password,previlege,status) values ("0001V","Saman","Perera","Saman123","","Saman@gmail.com","0912323232","123123","admin","Active");
-insert into members (nicnumber,first_name,last_name,user_name,profile_pic,email,mobile_no,password,previlege,status) values ("0002V","Kamal","Silva","Kamal1232","","Kamal@gmail.com","0912322232","124123","admin","Pending");
+insert into members (nicnumber,first_name,last_name,user_name,profile_pic,email,mobile_no,password,previlege,status) values ("0002V","Kamal","Silva","Kamal1232","","Kamal@gmail.com","0912322232","124123","user","Pending");
 insert into members (nicnumber,first_name,last_name,user_name,profile_pic,email,mobile_no,password,previlege,status) values ("0003V","Vimal","Amal","Vimal432","","vimal@gmail.com","0913323232","133123","user","Active");
 insert into members (nicnumber,first_name,last_name,user_name,profile_pic,email,mobile_no,password,previlege,status) values ("0004V","Vijitha","Roshan","Vijitha123","","viji@gmail.com","0913333232","123a23","user","Pending");
 
 select * from members;
 
 
-// Notifications
+// Notifications;
 
 CREATE TABLE IF NOT EXISTS `notifications` (
   `notification_id` varchar(40) ,
@@ -97,18 +97,23 @@ CREATE TABLE IF NOT EXISTS `bookings` (
   FOREIGN KEY (`sport`) REFERENCES sports(`name`),
   FOREIGN KEY (`uname`) REFERENCES members(`user_name`)
 );
-insert into bookings (booking_id,uname,date,slot,sport) values ("0001","Vimal432","2020-06-24","09:00-10:00","Rugby");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0002","Saman123","2020-06-24","09:00-10:00","Rugby");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0003","Vimal432","2020-06-25","10:00-11:00","FootBall");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0004","Vimal432","2020-06-24","10:00-11:00","Rugby");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0005","Vimal432","2020-06-24","09:00-10:00","Rugby");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0006","Sama123","2020-06-24","09:00-10:00","Rugby");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0007","Vimal432","2020-06-24","10:00-11:00","Rugby");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0008","Vimal432","2020-06-24","10:00-11:00","Rugby");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0008","Vimal432","2020-06-24","11:00-12:00","Rugby");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0008","Vimal432","2020-06-24","11:00-12:00","Rugby");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0002","Saman123","2020-06-24","13:00-14:00","Rugby");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0002","Saman123","2020-06-24","13:00-14:00","Rugby");
-insert into bookings (booking_id,uname,date,slot,sport) values ("0002","Saman123","2020-06-24","13:00-14:00","Rugby");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0001","Vimal432","2020-06-24","09:00-10:00","Swimming");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0002","Saman123","2020-06-24","09:00-10:00","Badminton");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0003","Vimal432","2020-06-25","10:00-11:00","Football");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0004","Vimal432","2020-06-24","10:00-11:00","Tabletennis");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0005","Vimal432","2020-06-24","09:00-10:00","Tabletennis");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0006","Sama123","2020-06-24","09:00-10:00","Football");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0007","Vimal432","2020-06-24","10:00-11:00","Swimming");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0008","Vimal432","2020-06-24","10:00-11:00","Swimming");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0008","Vimal432","2020-06-24","11:00-12:00","Badminton");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0008","Vimal432","2020-06-24","11:00-12:00","Badminton");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0002","Saman123","2020-06-24","13:00-14:00","Football");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0002","Saman123","2020-06-24","13:00-14:00","Football");
+insert into bookings (booking_id,uname,date,slot,sport) values ("0002","Saman123","2020-06-24","13:00-14:00","Tabletennis");
 
 select * from bookings;
+
+show tables;
+;
+;
+;

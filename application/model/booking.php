@@ -142,9 +142,6 @@ class Booking{
 
     public function getbookingsbymember($uname,$date,$lasttime){
         try{
-            echo($uname);
-            echo($date);
-            echo($lasttime);
             $sql ="SELECT * FROM bookings where uname='".$uname."' and date='".$date."' and slot='".$lasttime."' ;";
             $message="Booking Loading Failed";
             $result=$this->getdao()->execute($sql,$message);
