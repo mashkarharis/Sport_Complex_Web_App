@@ -24,8 +24,7 @@ class DAO{
             $conn = $connectiondata[1];
             if(!$conn){throw new Exception("Can't Connect Right Now");}
             $result=$conn->query($sqlquery);
-            echo"\nWork Done !";
-            if($result===false){echo"Came here";throw new Exception($exceptionmessage);}
+            if($result===false){throw new Exception($exceptionmessage);}
             $closed=ConnectionPool::checkIn($connectiondata);
             if(!$closed){throw new Exception("Error Occured While Closing Database");}
             return $result;

@@ -9,16 +9,7 @@ $_SESSION['name']=$_SESSION['uname'];
 <!DOCTYPE html>
 <html  >
 <head>
-  <!-- Site made with Mobirise Website Builder v4.12.3, https://mobirise.com -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v4.12.3, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo2.png" type="image/x-icon">
-  <meta name="description" content="">
-  
-  
-  <title>UserDashBoard</title>
+ <title>UserDashBoard</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -50,7 +41,7 @@ $_SESSION['name']=$_SESSION['uname'];
         <div class="menu-logo">
             <div class="navbar-brand">
                 
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="https://mobirise.com">
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="#">
                         WEBAPP</a></span>
             </div>
         </div>
@@ -67,7 +58,7 @@ $_SESSION['name']=$_SESSION['uname'];
                              <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-r"><span class="mbri-paper-plane mbr-iconfont mbr-iconfont-btn"></span>Member Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-t"><span class="mbri-flag mbr-iconfont mbr-iconfont-btn"></span>Sport Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-v"><span class="mbri-file mbr-iconfont mbr-iconfont-btn"></span>Booking Section &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a> <a class="nav-link link text-white display-4" href="AdminDashBoard.html#content4-11"></a>   
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="https://mobirise.com">
+                    <a class="nav-link link text-white display-4" href="#">
                         </a>
                 </li></ul>
             <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="logout.php"><span class="mbri-logout mbr-iconfont mbr-iconfont-btn"></span>
